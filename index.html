@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <img style="border-radius: 6px;" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIgVHkFr1dxcC4O14QrleMOsfB8XxWI10Nmi87HcR8QK44aYlt" alt="">
+    </div>
+    <div class="con">
+        <div class="first">
+            <div>
+                <img style="border-radius: 6px;" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIgVHkFr1dxcC4O14QrleMOsfB8XxWI10Nmi87HcR8QK44aYlt" alt="">
+                <span>Calculator</span>
+            </div>
+            <span class="close">X</span>
+        </div>
+        <div class="second">
+            <input id="input" type="text" disabled><br>
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="third">
+            <img onclick="del()" class="del" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0uvQl0Vzjbn4950sB3PnMjSWzDn5JP12wh1WWV-f_oSbMv5W-" alt="">
+            <table>
+                <tr>
+                    <td><button style="background-color: #2E3A48;" onclick="clearr()">C</button></td>
+                    <td style="display: flex; align-items: center;">
+                        <button class="bracket"  onclick="appendToDisplay('(')">(</button>
+                        <button class="bracket"  onclick="appendToDisplay(')')">)</button>
+                    </td>
+                    <td><button style="background-color: #2E3A48;" onclick="appendToDisplay('%')">%</button></td>
+                    <td><button style="background-color: #6344D4;" onclick="appendToDisplay('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="n" onclick="appendToDisplay('7')">7</button></td>
+                    <td><button class="n" onclick="appendToDisplay('8')">8</button></td>
+                    <td><button class="n" onclick="appendToDisplay('9')">9</button></td>
+                    <td><button class="x" style="background-color: #6344D4;" onclick="appendToDisplay('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="n" onclick="appendToDisplay('4')">4</button></td>
+                    <td><button class="n" onclick="appendToDisplay('5')">5</button></td>
+                    <td><button class="n" onclick="appendToDisplay('6')">6</button></td>
+                    <td><button class="minus" style="background-color: #6344D4;" onclick="appendToDisplay('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="n" onclick="appendToDisplay('1')">1</button></td>
+                    <td><button class="n" onclick="appendToDisplay('2')">2</button></td>
+                    <td><button class="n" onclick="appendToDisplay('3')">3</button></td>
+                    <td><button class="plus" style="background-color: #6344D4;" onclick="appendToDisplay('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="plus_minus" onclick="abs()">+/-</button></td>
+                    <td><button class="zero"onclick="appendToDisplay('0')">0</button></td>
+                    <td><button class="dot">.</button></td>
+                    <td><button class="ll" style="background-color: #A430FF;" onclick="calculateResult()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

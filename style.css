@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: #171C22;
+}
+.main {
+    width: 100%;
+    text-align: center;
+}
+.main img {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+}
+.con {
+    display: none;
+    padding: 10px;
+    border: 2px solid #212A35;
+    width: 50%;
+    margin: 60px auto;
+}
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border:none;
+}
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+.close {
+    font-family: cursive;
+    color: #937CE6;
+    border: 2px solid #937CE6;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.first div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.first div img {
+    width: 30px;
+    height: 30px;
+}
+.first div span {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.second {
+    text-align: end;
+}
+.second input {
+    height: 30px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-bottom: 10px;
+}
+.third {
+    padding-top: 15px;
+    border-top: 3px solid #A430FF;
+    width: 100%;
+    background-color: #212A35;
+    text-align: end;
+    padding-bottom: 20px;
+}
+.del {
+    width: 27px;
+    height: 20px;
+    text-align: end;
+    margin-right: 20px;
+}
+.third table {
+    margin: auto;
+}
+td button {
+    color: white;
+    font-size: 20px;
+    padding: 5px 0px;
+    width: 100px;
+    background-color: #171C22;
+    border-radius: 3px;
+    margin: 5px;
+}
+#input {
+    font-size: 18px
+}
+#result {
+    font-size: 40px;
+    color: white;
+}
+.bracket {
+    width: 47.5px; 
+    background-color: #2E3A48;
+    margin: 5px;
+}
+
+@media (max-width : 400px) {
+    .con {
+        margin: 20px auto;
+        width: 90%;
+    }
+    .third {
+        padding-top: 15px;
+        border-top: 3px solid #A430FF;
+        background-color: #212A35;
+        text-align: end;
+        padding-bottom: 20px;
+    }
+    td button {
+        color: white;
+        font-size: 20px;
+        padding: 5px 0px;
+        width: 50px;
+        background-color: #171C22;
+        border-radius: 3px;
+        margin: 5px;
+    }
+    .bracket {
+        width: 23px;
+        margin-right: 2px;
+    }
+}
